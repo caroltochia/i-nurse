@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(5),
     display: "flex",
   },
+  bar: {
+    backgroundColor: "#ff0f0f"
+  },
   logo: {
     flexGrow: "1",
     cursor: "pointer",
@@ -38,11 +41,11 @@ function Navbar() {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" className={classes.bar} >
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
-          Navbar
+          I-Nursing
         </Typography>
         {isMobile ? (
           <DrawerComponent />

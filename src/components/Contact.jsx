@@ -2,13 +2,12 @@ import React from "react";
 import { Typography } from "@material-ui/core";
 import { Box } from "@material-ui/core";
 
-
-function AboutPage() {
+function ContactPage() {
   return (
     <Box>
-      <Typography variant="h1">Sobre o NAS</Typography>
+      <Typography variant="h5">Entrar em contato: </Typography>
     </Box>
   );
 }
 
-export default AboutPage;
+export default ContactPage;
